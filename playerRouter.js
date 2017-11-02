@@ -2,7 +2,7 @@ import express from 'express';
 let router = express.Router();
 //import fake data
 import data from './fakedata'
-module.exports = router;
+
 //Create Routes Here
 //The Get Route that displays all Puppies
 router.get('/', (req, res) => {
@@ -14,10 +14,16 @@ router.get('/:id', (req, res) =>{
 	let id = req.params.id;
 	let query = req.query;
 	let player = data[id];
-	Object.keys(query).map(function(key){
-		return player[key]
-	})
-	res.send(data[id]);
+	let isEmptyQuery = Object.keys(query).length
+	is(!isEmptyQuery){
+		res.send(player);
+	} else {
+		let responses = {}
+		Object.keys(query).forEach(function(key){
+			responses[key] = player[key]
+		})
+		res.send(responses);
+	}
 })
 
 //Post Request to the Index Route
@@ -33,3 +39,5 @@ router.put('/:id', (req, res) => {
 	Object.assign(player, req.body);
 	res.send(player);
 })
+
+export default router;
