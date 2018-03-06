@@ -1,25 +1,19 @@
 {
   "name": "sequelize-playground",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/seunzone/sequelize-playground.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/seunzone/sequelize-playground/issues"
-  },
-  "homepage": "https://github.com/seunzone/sequelize-playground#readme",
   "dependencies": {
-    "pg": "^7.4.1",
-    "pg-hstore": "^2.3.2",
-    "sequelize": "^4.33.4"
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11",
+    "sequelize": "^4.35.2",
+    "sequelize-cli": "^4.0.0",
+    "serve-favicon": "~2.4.5"
   }
 }
