@@ -3,7 +3,6 @@ const Sequelize = require('sequelize');
 const sequelize = new Sequelize('seqcal', 'postgres', null, {
   host: 'localhost',
   dialect: 'postgres',
-
 });
 
 sequelize
