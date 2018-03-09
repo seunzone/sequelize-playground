@@ -9,3 +9,6 @@ A simple CRUD App created using Sequelize ORM
 - **POST** http://localhost:3000/todo/ - Add a new todo
 - **PUT** http://localhost:3000/todo/1 - Update todo with id == 1
 - **DELETE** http://localhost:3000/todo/1 - Delete todo with id == 1
+
+Checkout the async branch the async-await implementation of the app
+https://github.com/seunzone/sequelize-playground/tree/async
